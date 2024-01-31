@@ -1,0 +1,93 @@
+.main {
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  line-height: 1.5;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1d21;
+}
+
+.horizontal-panes {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 70%;
+  }
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pane {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  vertical-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #bbbbbb;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  color: #aaaaaa;
+  font-size: 20px;
+}
+
+.otto-logo {
+  border-radius: 12px;
+}
+
+a {
+  color: #8b3b3b;
+  text-decoration: none;
+}
+
+.full-pane {
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+}
+
+.pane-img {
+  width: 300px;
+  @media (max-width: 800px) {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+img {
+  max-width: 80vw;
+}
